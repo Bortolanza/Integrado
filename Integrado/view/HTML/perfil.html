@@ -1,0 +1,99 @@
+<link href="../../../view/CSS/perfil.css" rel="stylesheet">
+<hr class="my-1">
+<div class="container">
+  <main>
+    <div class="row g-5" id="formbox">
+      <div class="col col-lg-10">
+        <h4 class="mb-3">Perfil</h4>
+        <form id="form1">
+            <div class="col g-5" id="formContainers">
+            
+                <div class="col">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome da pessoa" required>
+                </div>
+                <div class="formContainers-row">
+                    <div class="col">
+                        <label for="documento" class="form-label">Documento</label>
+                        <input type="text" name="documento" class="form-control" id="documento" placeholder="Numero do documento" required>
+                    </div>    
+
+                    <div class="col">
+                        <label for="aniversario" class="form-label">Aniversario</label>
+                        <input type="date" name="aniversario" class="form-control" id="aniversario" placeholder="Aniversario">
+                    </div>    
+                </div>
+                <div class="pt-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="cliente" name="cliente">
+                      <label class="form-check-label" for="cliente">
+                          Cliente
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="fornecedor" name="fornecedor">
+                      <label class="form-check-label" for="fornecedor">
+                        Fornecedor
+                      </label>
+                  </div>
+                  <div>
+                    <label class="form-check-label pt-2" for="natureza">Natureza</label>
+                    <select class="form-select mt-2" aria-label="Default select example" name="natureza" id="natureza">
+                      <option selected>Escolha a natureza da pessoa </option>
+                      <option value="0">Fisica</option>
+                      <option value="2">Jurídica</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col mt-2">
+                  <label for="comentario" class="form-label">Comentario</label>
+                  <input type="text" name="comentario" class="form-control" id="comentario" placeholder="Comentario">
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Contatos</h4>
+                <div class="formContainers-row">
+                    <div class="col">
+                        <label for="dscontato" class="form-label">Email</label>
+                        <input type="email" name="dscontato" class="form-control" id="email" placeholder="Email">
+                    </div>    
+
+                    <div class="col">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Telefone">
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <h4 class="mb-3">Endereco</h4>
+                <div class="formContainers-row">
+                    <div class="col">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" name="cidade" class="form-control" id="cidade" placeholder="Cidade">
+                    </div>    
+
+                    <div class="col">
+                        <label for="logradouro" class="form-label">Bairro</label>
+                        <input type="text" name="logradouro" class="form-control" id="logradouro" placeholder="Bairro">
+                    </div>    
+                </div>
+                <div class="formContainers-row">
+                    <div class="col">
+                        <label for="rua" class="form-label">Rua</label>
+                        <input type="text" name="rua" class="form-control" id="rua" placeholder="Rua">
+                    </div>    
+                </div>
+                <div class="formContainers-row" id="buttons-row">
+                    <button class="w-25 btn btn-primary btn-lg formButton" id="insert" form="form1" type="submit">Salvar</button>
+                </div> 
+    
+                <hr class="my-4">
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../../JS/jquery.js"></script>
+<script src="../../JS/Pessoa/selectPessoaPerfil.js"></script>
+<script src="../../JS/Pessoa/updatePessoa.js"></script>

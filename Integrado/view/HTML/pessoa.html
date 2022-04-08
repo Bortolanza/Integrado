@@ -1,0 +1,58 @@
+    <link href="../../../view/CSS/pessoa.css" rel="stylesheet">
+    <hr class="my-1">
+    <div class="container">
+      <main>
+        <div class="row g-5" id="formbox">
+          <div class="col col-lg-10">
+            <h4 class="mb-3">Consulta de Pessoa</h4>
+            <form novalidate id="form1">
+              <div class="col g-5" id="formContainers">
+                
+                <div class="col">
+                  <label for="nome" class="form-label">Nome:</label>
+                  <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome da pessoa" required>
+                </div>
+                <div class="formContainers-row">
+
+                  <div class="col">
+                      <label for="documento" class="form-label">Documento:</label>
+                      <input type="email" name="documento" class="form-control" id="documento" placeholder="Numero do documento" required>
+                  </div>    
+
+                  <div class="col">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email da pessoa">
+                  </div>    
+
+              </div>
+              <hr class="my-4">
+
+              <div class="formContainers-row" id="buttons-row">
+                <a href="./novaPessoa.php" class="w-25 btn btn-primary btn-lg" id="novaPessoa">Nova Pessoa</a>
+                <button class="w-25 btn btn-primary btn-lg" id="buscar" form="form1" type="submit">Buscar</button>
+              </div> 
+
+              <hr class="my-4">
+            </form>
+          </div>
+
+          <table class="table invisible" id="table-1">
+            <thead class="table-dark">
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Documento</th>
+              <th>Contato</th>
+              <th class="w-25"></th>
+            </thead>
+            <div clas="overflow-auto">
+              <tbody class="tableBody">
+                <tr class="table-light align-middle border border-dark tableTuple">
+                </tr>
+              </tbody>
+            </div>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="../../JS/jquery.js"></script>
+    <script src="../../JS/Pessoa/pessoaQuery.js"></script>

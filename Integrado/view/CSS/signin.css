@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  width: 100%;
+  padding-top: 15%;
+}
+
+.form-signin {
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+  box-sizing: content-box;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="usuario"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin .button-div{
+  display: flex;
+  justify-content: right;
+  gap: 1%;
+}
+
+.form-signin .btn{
+  width: 25%;
+}

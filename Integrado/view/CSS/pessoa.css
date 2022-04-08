@@ -1,0 +1,23 @@
+.container{
+  max-width: 100%;
+  padding-left: 15%;
+}
+
+#formbox{
+  width: 100%;
+}
+
+.formContainers-row{
+  display: flex;
+  flex-direction: row;
+  gap: 16.5%;
+  margin-top: 1%;
+}
+
+#buttons-row{
+  justify-content: space-between;
+}
+
+.table-button{
+  margin-left: 30%;
+}
